@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour Website</title>
+    <!--Swiper cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section starts -->
+
+    <header class="header">
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <img
+        src="./images/Tour.png"
+        height="80px"
+        width="85px"
+        alt="Error Loading"
+      />
+
+      <!-- <a href="#" class="logo"><span>T</span>ravel</a> -->
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+
+      <!-- Form Tag: An HTML form is used to collect user input. The user input is most often sent to a server for processing -->
+      <!-- The <input> tag specifies an input field where the user can enter data. -->
+
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+    </header>
+    <!-- header section ends -->
+
+    <!-- login form container -->
+
+    <div class="login-form-container">
+      <i class="fas fa-times" id="form-close"></i>
+
+      <form action="">
+        <h3>login</h3>
+        <input
+          type="text"
+          class="box"
+          placeholder="Enter your email id"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="Invalid email address"
+          required
+        />
+        <input
+          type="password"
+          class="box"
+          placeholder="Enter your password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+          required
+        />
+        <input type="submit" value="login now" class="btn" />
+        <input type="checkbox" id="remember" />
+        <label for="remember">remember me</label>
+        <p>
+          forget password?
+          <a href="/Forget Password/forgetpass.html">click here</a>
+        </p>
+        <p>
+          don't have an account?
+          <a href="/Registration/registration.html">register now</a>
+        </p>
+      </form>
+    </div>
+
+    <!-- login form container -->
+
+    <!-- home section starts here  -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Let’s make a memory</h3>
+        <p>discover new places with us, new world awaits</p>
+        <a href="#" class="btn">discover more</a>
+      </div>
+
+      <div class="controls">
+        <span class="vid-btn active" data-src="./images/Beach.mp4"></span>
+       <span class="vid-btn" data-src="./images/Enjoy.mp4"></span>
+       <span class="vid-btn" data-src="./images/Dubai.mp4"></span>
+       <span class="vid-btn" data-src="./images/Mountain.mp4"></span>
+       <span class="vid-btn" data-src="./images/Couple.mp4"></span>
+      </div>
+
+      <div class="video-container">
+        <video
+          src="./images/Beach.mp4"
+          id="video-slider"
+          loop
+          autoplay
+          muted
+        ></video>
+      </div>
+    </section>
+
+    <!-- home section ends here  -->
+
+    <!-- book section starts -->
+
+    <section class="book" id="book">
+      <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="./images/IMG-20230608-WA0022.jpg" alt="" />
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <h3>where to</h3>
+            <input
+              type="text"
+              pattern="^[a-zA-Z\s]{3,20}$"
+              placeholder="Place name"
+              required
+            />
+          </div>
+          <div class="inputBox">
+            <h3>how many</h3>
+            <input
+              type="text"
+              pattern="[789][0-9]{9}"
+              placeholder="Number of guests"
+              required
+            />
+          </div>
+          <div class="inputBox">
+            <h3>arrivals</h3>
+            <input type="date" />
+          </div>
+          <div class="inputBox">
+            <h3>leaving</h3>
+            <input type="date" />
+          </div>
+          <input type="submit" class="btn" value="book now" />
+        </form>
+      </div>
+    </section>
+
+    <!-- book section ends -->
+
+    <!-- package section starts-->
+    <section class="packages" id="packages">
+      <h1 class="heading">
+        <span>P</span>
+        <span>A</span>
+        <span>C</span>
+        <span>K</span>
+        <span>A</span>
+        <span>G</span>
+        <span>E</span>
+        <span>S</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img
+            src="https://imgcld.yatra.com/ytimages/image/upload/t_h…rplist_desktop_hc/v1486627118/Varanasi_People.jpg"
+            alt=""
+          />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Uttar Pradesh, India</h3>
+            <p>
+              <strong>5 Nights/6 Days</strong> Holy Trip To Kashi, Gaya, Prayag
+              &amp; Ram Jan Bhoomi
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">₹12,000 <span>₹18,000</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img
+            src="https://static.toiimg.com/thumb/width-600,height-400,msid-35520345.cms"
+            alt=""
+          />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Sydney</h3>
+            <p>
+              <strong>7 Nights/6 Days</strong> The Big Australian Holiday with
+              Sydney Harbour Tour.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">₹95,000 <span>₹1,20000</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img
+            src="https://static.toiimg.com/thumb/width-600,height-400,msid-51508384.cms"
+            alt=""
+          />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Hawaii</h3>
+            <p>
+              <strong>6 Nights/5 Days</strong> Hawaii Family Sightseeing
+              Vacation.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">₹85,000 <span>₹10,0000</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img
+            src="https://static.toiimg.com/thumb/width-600,height-400,msid-45454098.cms"
+            alt=""
+          />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Paris</h3>
+            <p>
+              <strong>6 Nights/7 Days</strong> Rejuvenating Paris Family
+              Vacation Package.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">₹75,000 <span>₹90,000</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img
+            src="https://img.traveltriangle.com/attachments/pictures/1096089/original/Panoramic_view_of_Tokyo_Skyline_in_Tokyo__Japan.jpg"
+            alt=""
+          />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Tokyo</h3>
+            <p>
+              <strong>10 Nights/9 Days</strong> Best of Japan Group Departure
+              2023.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">₹92,000 <span>₹99,000</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img
+            src="https://static.toiimg.com/thumb/width-600,height-400,msid-76384227.cms"
+            alt=""
+          />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Egypt</h3>
+            <p>
+              <strong>7 Nights/6 Days</strong> Cairo, Nile Cruise &amp;
+              Alexandria by Flight
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">₹82,000 <span>₹95,000</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- package section ends-->
+
+    <!-- services section starts -->
+    <section class="services" id="services">
+      <h1 class="heading">
+        <span>S</span>
+        <span>E</span>
+        <span>R</span>
+        <span>v</span>
+        <span>I</span>
+        <span>C</span>
+        <span>E</span>
+        <span>S</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-hotel"></i>
+          <h3>Affordable Hotels</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            pariatur praesentium distinctio beatae, explicabo quia!
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-utensils"></i>
+          <h3>Food and Drinks</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            pariatur praesentium distinctio beatae, explicabo quia!
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-bullhorn"></i>
+          <h3>Safety Guide</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            pariatur praesentium distinctio beatae, explicabo quia!
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-globe-asia"></i>
+          <h3>Around the World</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            pariatur praesentium distinctio beatae, explicabo quia!
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-plane"></i>
+          <h3>Fastest Travel</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            pariatur praesentium distinctio beatae, explicabo quia!
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-hiking"></i>
+          <h3>Adventures</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            pariatur praesentium distinctio beatae, explicabo quia!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- services section ends here -->
+
+    <!-- gallery section starts here-->
+    <section class="gallery" id="gallery">
+      <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+      </h1>
+      <div class="box-container">
+        <div class="box">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/448/646/567/india-the-taj-mahal-wallpaper-preview.jpg"
+            alt=""
+          />
+          <div class="content">
+            <h3>Taj Mahal</h3>
+            <p>Diverse Natural wonders of India.</p>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./images/pexels-a-barry-3733685.jpg" alt="" />
+          <div class="content">
+            <h3>Sydney Opera House</h3>
+            <p>A masterpiece of 20th-century architecture.</p>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./images/pexels-akhil-gautam-12601812.jpg" alt="" />
+          <div class="content">
+            <h3>Himalaya</h3>
+            <p>Highest mountain range in the world.</p>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./images/pexels-thais-cordeiro-3873663.jpg" alt="" />
+          <div class="content">
+            <h3>Rajasthan</h3>
+            <p>Land of King's.</p>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="https://images.unsplash.com/photo-1642841819300-20ed449c02a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80"
+            alt=""
+          />
+          <div class="content">
+            <h3>Statue of unity</h3>
+            <p>A universal symbol of freedom and democracy.</p>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="https://static.toiimg.com/thumb/width-600,height-400,msid-79811506.cms"
+            alt=""
+          />
+          <div class="content">
+            <h3>Gulmarg, J & K</h3>
+            <p>Beauty of Kashmir.</p>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="https://images.unsplash.com/photo-1587659901518-7020d4413085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+            alt=""
+          />
+          <div class="content">
+            <h3>London eye</h3>
+            <p>
+              Millennium Wheel, revolving observation wheel, or Ferris wheel.
+            </p>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="https://static.toiimg.com/thumb/width-600,height-400,msid-54424920.cms"
+            alt=""
+          />
+          <div class="content">
+            <h3>Maldives</h3>
+            <p>A trophical heaven.</p>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="https://lp-cms-production.imgix.net/2023-01/GettyImages-827446284.jpg?w=600&h=400"
+            alt=""
+          />
+          <div class="content">
+            <h3>Bali, Indonesia</h3>
+            <p>Bali, land of the gods.</p>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery section ends here -->
+
+    <!-- review section starts here -->
+    <section class="review" id="review">
+      <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+      </h1>
+
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <img
+                src="https://img.freepik.com/free-photo/indian-man-smiling-mockup-psd-cheerful-expression-closeup-portra_53876-143269.jpg"
+                alt=""
+              />
+              <h3>Pankaj Sharma</h3>
+              <p>
+                Thank you so much for your help in organising our India trip. We
+                had an absolutely fantastic time, helped by your companies
+                amazing organisation and all your great staff.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img
+                src="https://drifterplanet.com/wp-content/uploads/2016/02/Anisha-Victor.jpg"
+                alt=""
+              />
+              <h3>Anisha Victor</h3>
+              <p>
+                The whole trip worked very well.Details of the offer very clear
+                with accommodation options spelt out clearly when booking hotels
+                and accommodation.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box">
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/006/859/348/small/young-boy-indian-student-portrait-photo.jpg"
+                alt=""
+              />
+              <h3>Devesh Singh</h3>
+              <p>
+                Thank you for a wonderful trip. You were excellent in
+                communication and sorting out our tailor made holiday . You were
+                very professional. All details were well taken care of.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img
+                src="https://www.aljazeera.com/wp-content/uploads/2022/01/Ragini-Das-Co-founder-leap.club_.jpg?resize=1800%2C1800"
+                alt=""
+              />
+              <h3>Ragini Das</h3>
+              <p>
+                We are very pleased to share our recent travel experiences which
+                was organized by Travel Pvt.Ltd.Travel arrangements were very
+                good and accommodations were wonderful.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box">
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/006/859/348/small/young-boy-indian-student-portrait-photo.jpg"
+                alt=""
+              />
+              <h3>Shubham Desai</h3>
+              <p>
+                Thank you very much for organizing the trip. It has been
+                excellent one. It was customized and planned as per
+                requirement.Thank you so much for providing such an excellent
+                services.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--swiper js file link-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- /* contact section starts */ -->
+    <section class="contact" id="contact">
+      <h1 class="heading">
+        <span>C</span>
+        <span>O</span>
+        <span>N</span>
+        <span>T</span>
+        <span>A</span>
+        <span>C</span>
+        <span>T</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="./images/contactUs.jpg" alt="" />
+        </div>
+
+        <form name="contact" netlify>
+          <div class="inputBox">
+            <input
+              type="text"
+              pattern="^[a-zA-Z\s]{3,20}$"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required
+            />
+          </div>
+          <div class="inputBox">
+            <input
+              type="text"
+              pattern="[789][0-9]{9}"
+              placeholder="Number"
+              required
+            />
+            <input type="text" placeholder="Subject" />
+          </div>
+          <textarea
+            placeholder="Message"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="Submit" class="btn" value="Send message" />
+        </form>
+      </div>
+    </section>
+
+    <!--footer section-->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>about us</h3>
+          <p style="text-align: left">
+            Founded in the year 2005 as SparkTravel.com, an online travel
+            platform, the company boosted as a private limited in the year 2013
+            and has emerged as the “Best Upcoming Inbound Tour Operators in
+            India”. It has been awarded in the category of “Excellence in the
+            Tourism Industry” by World Tourism Brand Academy.
+          </p>
+        </div>
+        <div class="box" style="margin-left: 5px">
+          <h3>branch locations</h3>
+          <a href="#">India</a>
+          <a href="#">USA</a>
+          <a href="#">Japan</a>
+          <a href="#">France</a>
+        </div>
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#home">home</a>
+          <a href="#book">book</a>
+          <a href="#packages">packages</a>
+          <a href="#services">services</a>
+          <a href="#gallery">gallery</a>
+          <a href="#review">review</a>
+          <a href="#contact">contact</a>
+        </div>
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
+        </div>
+      </div>
+      <h1 class="credit">
+        created by
+        <span>mr.Kimay gore,mr.Rushikesh Ramteke and Vrushali Chamatkar</span> |
+        all rights reserved!
+      </h1>
+    </section>
+
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+  </body>
+</html>
